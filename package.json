@@ -1,4 +1,5 @@
 {
+  "start": "node jquery.js",
   "name": "npminit",
   "version": "1.0.0",
   "description": "$ heroku login\r $ git add .\r $ git commit -am \"Deploy inicial\"\r $ git push heroku main",

@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
         <!-- Carrega o jQuery e jQuery UI do CDN -->
-        <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-        <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">            <!-- Carrega o arquivo CSS local  -->
 </head>
 
@@ -51,24 +48,6 @@
 
 
 <!---------------------------------------------------------------------------------------------->
-    <script>// Selecionar ID
-        document.addEventListener("DOMContentLoaded", function() {
-            var cellsFirstColumn = document.querySelectorAll("#tabelaCliente tr td");    // Selecione todas as células da primeira coluna
-            
-            cellsFirstColumn.forEach(function(cell) {                               // Adicione um evento de clique a cada célula da primeira coluna
-                cell.addEventListener("click", function() {                         // Obtenha o texto da célula clicada
-                    var cellText = this.textContent.trim();                         // Atribua o texto da célula ao elemento de entrada
-                    var paragraph = document.getElementById("idClient");
-                    paragraph.textContent = cellText;
-                    document.getElementById("idClientInput").value = cellText;       // Atualize o valor do campo de entrada oculto com o ID do cliente
-                });
-            });
-        });
-    </script>
-
-
-    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
-    <script>var buttonImageURL = "{{ url_for('static', filename='img/calender.png') }}";</script>   <!-- Importar notas -->
     
 </body>
 </html>
