@@ -55,8 +55,6 @@ def adicionar():
 def selectDelete():
     return render_template("pagina_4.html")
 
-
-
 # Obrigatorio - Atualiza a pagina 
 if __name__ == "__main__":              
     app.run(debug=True)
