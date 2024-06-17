@@ -40,7 +40,7 @@ def move():
     return redirect(url_for('index'))
 
 # #----------------------------------------  PAGINA 2 - SELEÇÃO DE CLIENTES
-@app.route('/selecionar-cliente',methods=['GET', 'POST'])                               # Route -> e o que vem depois do nome do site por se eu colocar (/) a homepage
+@app.route('/selecionar-cliente')                               # Route -> e o que vem depois do nome do site por se eu colocar (/) a homepage
 def clienteGeral():
     return render_template("pagina_2.html")
 
