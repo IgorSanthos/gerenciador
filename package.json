@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/IgorSanthos/gerenciador/issues"
   },
-  "homepage": "https://github.com/IgorSanthos/gerenciador#readme"
+  "homepage": "https://github.com/IgorSanthos/gerenciador#readme",
+
+  "dependencies": {
+    "gunicorn": "versão_desejada"
+}
+
 }
