@@ -1,0 +1,6 @@
+$ heroku login
+$ git add .
+$ git commit -am "Deploy inicial"
+$ git push heroku main
+
+_gerenciador de arquivos sem um banco de dados
